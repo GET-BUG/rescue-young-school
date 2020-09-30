@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>选择题</title>
+    <script type="text/javascript" src="/static/js/jquery-1.4.4.min.js"></script>
+
+</head>
+<body>
+
+<div>
+    <div style="height: auto;width: 100%;font-size: 100%;background-color: darkkhaki;position: fixed;bottom:20px;">
+        <table>
+            <tr>
+                <td style="width: 30%;text-align: center">时间:<span id="time" style="color: red;text-align: right"></span></td>
+                <td style="width: 40%;text-align: center"><span style="text-align: center">每天小测试</span></td>
+                <td style="width: 30%;text-align: center">得分:<span id="fen" style="color: red;text-align: left"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div style="height: 30px;background-color: blueviolet;text-align: center">
+        <span style="line-height: 30px;text-align: center;color: aliceblue">答题星-单选训练</span>
+    </div>
+    <#list Choices as choice>
+        <div>
+            <#--标题-->
+            ${choice_index+1}、${choice.title}<br>
+            <#--选项A-->
+            <button style="border: none" name="A" onclick="isAnswer(this,${choice_index})">
+                ${choice.AVal}
+            </button><br>
+            <#--选项B-->
+            <button style="border: none" name="B" onclick="isAnswer(this,${choice_index})">
+                ${choice.BVal}
+            </button><br>
+            <#--选项C-->
+            <button style="border: none" name="C" onclick="isAnswer(this,${choice_index})">
+                ${choice.CVal}
+            </button><br>
+            <#--选项D-->
+            <button style="border: none" name="D" onclick="isAnswer(this,${choice_index})">
+                ${choice.DVal}
+            </button>
+            <#--公布答案-->
+            <div hidden id="T${choice_index}">
+                正确答案：<span id="${choice_index}" style="color: red">${choice.answer}</span><br>
+            </div>
+        </div>
+        <hr>
+    </#list>
+    <div style="height: 100px;text-align: center">
+        <div style="height: 50px;text-align: center;">
+           <button id="over" style="border-radius: 10px;width: 50px;height:30px;color: #2491f3;background-color: #ffd700">交卷</button>
+            <div style="width: 67px;height: 50px;position:relative;">
+                <img hidden style="position:absolute; left:50%; margin-left:100px;height: 50px;width: auto;" id="xin" src="../static/image/0.jpg"/>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+         function isAnswer(event,correct){
+             var value = document.getElementById(correct).innerText;
+            if (event.name==value){
+                //正确
+                document.getElementById("T"+correct).style.display="block";
+                $(event).siblings().css('pointer-events', 'none');
+                $(event).css({"pointer-events":"none","backgroundColor":"#00FFFF"})
+            }else {
+                //错误: 扣分 提醒
+                var doc = document.getElementById('fen');
+                doc.innerText = doc.innerText - 5;
+                document.getElementById("T"+correct).style.display="block";
+                $(event).siblings().css('pointer-events', 'none');
+                $(event).css({"pointer-events":"none","backgroundColor":"#FF0000"})
+            }
+         }
+
+         document.getElementById('fen').innerText='100';
+
+         var oBox= document.getElementById('time');
+         var maxtime = 10 * 60;
+         function CountDown() {
+             if (maxtime >= 0) {
+                 minutes = Math.floor(maxtime / 60);
+                 seconds = Math.floor(maxtime % 60);
+                 msg = minutes + "分" + seconds + "秒";
+                 oBox.innerHTML = msg;
+                 if (maxtime == 5 * 60)alert("还剩5分钟");
+                 --maxtime;
+             } else{
+                 clearInterval(timer);
+                 alert("时间到，结束!");
+             }
+         }
+         timer = setInterval("CountDown()", 1000);
+         //交卷
+         $("#over").click(function (){
+             alert("该功能暂未开发完成")
+             $("#over").css("display","none")
+             $("#xin").css("display","block")
+         })
+    </script>
+</div>
+
+</body>
+</html>
