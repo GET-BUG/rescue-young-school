@@ -2,3 +2,4 @@
 ・（・◇・）？
 
 目标：打造一个能每天让小学生吃到妈妈定做的竹笋炒肉！
+https://raw.githubusercontent.com/GET-BUG/rescue-young-school/master/1.png
