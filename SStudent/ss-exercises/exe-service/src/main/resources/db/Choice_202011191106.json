@@ -1,0 +1,213 @@
+{
+"Choice": [
+{
+  "_id": "5f6d934a0745052bb4c0e49a",
+  "title": "1 加 1等于几？",
+  "aVal": "A、1",
+  "bVal": "B、1.1",
+  "cVal": "C、2",
+  "dVal": "D、11",
+  "answer": "C",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d93d60745052bb4c0e49b",
+  "title": "李白是什么时期的诗人？",
+  "aVal": "A、宋代",
+  "bVal": "B、唐代",
+  "cVal": "C、元朝",
+  "dVal": "D、明代",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d941a0745052bb4c0e49c",
+  "title": "《水调歌头》的作者是？",
+  "aVal": "A、李白",
+  "bVal": "B、苏轼",
+  "cVal": "C、辛弃疾",
+  "dVal": "D、白居易",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d96370745052bb4c0e49d",
+  "title": "下面和李白同时期的诗人是谁？",
+  "aVal": "A、苏轼",
+  "bVal": "B、杜甫",
+  "cVal": "C、王安石",
+  "dVal": "D、李清照",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d96970745052bb4c0e49e",
+  "title": "历史上的荆轲是男生还是女生？",
+  "aVal": "A、男",
+  "bVal": "B、女",
+  "cVal": "C、未知",
+  "dVal": "D、没有这个人",
+  "answer": "A",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d97b20745052bb4c0e49f",
+  "title": "饭前洗手会怎样？",
+  "aVal": "A、浪费吃饭时间",
+  "bVal": "B、不想洗手",
+  "cVal": "C、少生病",
+  "dVal": "D、哈哈",
+  "answer": "C",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d982d0745052bb4c0e4a0",
+  "title": "李白\"号\"什么？",
+  "aVal": "A、青稞居士",
+  "bVal": "B、青莲居士",
+  "cVal": "C、清莲居士",
+  "dVal": "D、青连居士",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d98e30745052bb4c0e4a1",
+  "title": "《静夜思》的作者是？",
+  "aVal": "A、李白",
+  "bVal": "B、杜甫",
+  "cVal": "C、苏轼",
+  "dVal": "D、王安石",
+  "answer": "A",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9a1625aaf94cbee32c20",
+  "title": "86 + 55 \u003d ？",
+  "aVal": "A、131",
+  "bVal": "B、141",
+  "cVal": "C、151",
+  "dVal": "D、128",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9a7825aaf94cbee32c21",
+  "title": "12 × 12 \u003d ？",
+  "aVal": "A、121",
+  "bVal": "B、144",
+  "cVal": "C、124",
+  "dVal": "D、212",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9ba225aaf94cbee32c22",
+  "title": "下列字母的排列顺序错误的一组是？",
+  "aVal": "A、ABCDEF",
+  "bVal": "B、JMMKLG",
+  "cVal": "C、OPQRST",
+  "dVal": "D、UVWXYZ",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9c1825aaf94cbee32c23",
+  "title": "读音节，注意声调，选出调号有错误的一组",
+  "aVal": "A、水平如镜shuǐ píng rú jìng",
+  "bVal": "B、桃李争妍táo lǐ zhēng yán",
+  "cVal": "C、开卷有益kāi juǎn yǒu yì",
+  "dVal": "D、完好无损wán hǎo wú sǔn",
+  "answer": "C",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9cd825aaf94cbee32c25",
+  "title": "“壮”这个字如果用音序查字法来查的话，应查（ ）",
+  "aVal": "A、Z",
+  "bVal": "B、zh",
+  "cVal": "C、zuàng",
+  "dVal": "D、zhuàng",
+  "answer": "A",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9eca25aaf94cbee32c26",
+  "title": "下列词的字形错误的一组是（ ）",
+  "aVal": "A、桥梁",
+  "bVal": "B、漂流 ",
+  "cVal": "C、资态",
+  "dVal": "D、侮辱",
+  "answer": "C",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9f2725aaf94cbee32c27",
+  "title": "完成这项任务对我来说，是一次（   ）的考验。",
+  "aVal": "A、严厉",
+  "bVal": "B、严格 ",
+  "cVal": "C、严峻",
+  "dVal": "D、严肃",
+  "answer": "C",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6d9ff925aaf94cbee32c28",
+  "title": "“这件事你不能不做。”这句话的意思是（ ）",
+  "aVal": "A、你不能做",
+  "bVal": "B、你一定要做",
+  "cVal": "C、你可以不做",
+  "dVal": "D、不想做可以不做",
+  "answer": "B",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6da10825aaf94cbee32c29",
+  "title": "“中秋节”是几月几号？（ ）",
+  "aVal": "A、农历八月十五",
+  "bVal": "B、八月十五号",
+  "cVal": "C、阳历八月十五号",
+  "dVal": "D、八月十五日",
+  "answer": "A",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6da15425aaf94cbee32c2a",
+  "title": "“中秋节”传统小吃是什么？（ ）",
+  "aVal": "A、汤圆",
+  "bVal": "B、饺子",
+  "cVal": "C、粽子",
+  "dVal": "D、月饼",
+  "answer": "D",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6da2af25aaf94cbee32c2b",
+  "title": "“国庆节”的纪念意义正确的是？（ ）",
+  "aVal": "A、纪念中华民国成立",
+  "bVal": "B、纪念抗日战争胜利",
+  "cVal": "C、纪念中华人民共和国成立",
+  "dVal": "D、纪念中国共产党成立",
+  "answer": "C",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6da37f25aaf94cbee32c2c",
+  "title": "“中国共产党”成立于？（ ）",
+  "aVal": "A、1923年7月23日",
+  "bVal": "B、1913年9月1日",
+  "cVal": "C、1911年10月1日",
+  "dVal": "D、1921年7月23日",
+  "answer": "D",
+  "_class": "com.student.pojo.Choice"
+},
+{
+  "_id": "5f6da4dc25aaf94cbee32c2d",
+  "title": "下列哪个是我国著名数学家？（ ）",
+  "aVal": "A、莫言",
+  "bVal": "B、牛顿",
+  "cVal": "C、华罗庚",
+  "dVal": "D、爱因斯坦",
+  "answer": "C",
+  "_class": "com.student.pojo.Choice"
+}
+]}

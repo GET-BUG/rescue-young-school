@@ -1,13 +1,12 @@
 package com.student.common.downUtil;
 
-import com.student.pojo.Choice;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import freemarker.template.TemplateException;
-import sun.nio.cs.UTF_32;
 
-import java.io.*;
-import java.util.List;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.util.Map;
 
 public class CreateWord {

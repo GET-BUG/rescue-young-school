@@ -21,11 +21,13 @@ public class ChoiceController {
     @Resource
     private ChoiceService choiceService;
 
+    //获取所有题目
     @GetMapping("getChoice")
     public List<Choice> getChoice(){
         List<Choice> choices = choiceService.getChoices();
         return choices;
     }
+    //保存题目
     @PostMapping("saveChoice")
     public boolean saveChoice(Choice choice){
         Choice choice1 = choiceService.saveChoice(choice);
@@ -35,6 +37,10 @@ public class ChoiceController {
         return true;
     }
 
+    /**
+     * 在线题目列表
+     * @return
+     */
     @GetMapping("testPaper")
     @ResponseBody
     public ModelAndView TestPaper(){
@@ -44,6 +50,10 @@ public class ChoiceController {
         mv.addObject("Choices",choices);
         return mv;
     }
+
+    /**
+     * 下载word选择题
+     */
     @GetMapping("getTestPaper")
     @ResponseBody
     public void getTestPaper(){
