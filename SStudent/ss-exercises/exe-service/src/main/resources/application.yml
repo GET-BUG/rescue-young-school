@@ -1,17 +1,20 @@
 server:
   port: 10000
 spring:
-  devtools:
+  devtools: #自动刷新项目
     restart:
       enabled: true
-      additional-paths: resources/**,static/**,templates/**
-      exclude: data/**
-  data:
+      additional-paths: src/main/java #会重启的目录
+      exclude: WEB-INF/**
+  data: #数据源
     mongodb:
-      database: SStudent
-  freemarker:
-    suffix: .ftl
-    template-loader-path: classpath:/templates
+      uri: mongodb://127.0.0.1:6700,127.0.0.1:6800,127.0.0.1:6900/SStudent
+  freemarker: #静态文件引擎
+    suffix: .html
+    template-loader-path: classpath:/templates,classpath:/static
     cache: false
-  mvc:
-    static-path-pattern: /static/**
+
+  #  mvc: #静态文件路径
+#    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/

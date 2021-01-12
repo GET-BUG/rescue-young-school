@@ -8,6 +8,7 @@ public class LoginController {
 
     @RequestMapping("/")
     public String login(){
-        return "forward:choice/testPaper";
+        return "hello";
     }
+
 }
